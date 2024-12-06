@@ -1,0 +1,60 @@
+\begin{thebibliography}{8}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Agostinelli et~al.(2003)Agostinelli, Allison, Amako, Apostolakis, Araujo, Arce, Asai, Axen, Banerjee, Barrand, Behner, Bellagamba, Boudreau, Broglia, Brunengo, Burkhardt, Chauvie, Chuma, Chytracek, Cooperman, and Zschiesche]{Agostinelli2003}
+S.~Agostinelli, J.~Allison, K.~Amako, J.~Apostolakis, H.~Araujo, P.~Arce, M.~Asai, D.~Axen, S.~Banerjee, G.~Barrand, F.~Behner, L.~Bellagamba, J.~Boudreau, L.~Broglia, A.~Brunengo, H.~Burkhardt, S.~Chauvie, J.~Chuma, R.~Chytracek, G.~Cooperman, and D.~Zschiesche.
+\newblock Geant4—a simulation toolkit.
+\newblock \emph{Nuclear Instruments and Methods in Physics Research Section A: Accelerators, Spectrometers, Detectors and Associated Equipment}, 506\penalty0 (3):\penalty0 250--303, 2003.
+\newblock \doi{10.1016/S0168-9002(03)01368-8}.
+\newblock URL \url{https://doi.org/10.1016/S0168-9002(03)01368-8}.
+
+\bibitem[Brown(2007)]{Brown2007}
+R.~M. Brown.
+\newblock The cms electromagnetic calorimeter.
+\newblock \emph{Nuclear Instruments and Methods in Physics Research Section A: Accelerators, Spectrometers, Detectors and Associated Equipment}, 572\penalty0 (1):\penalty0 29--32, 2007.
+\newblock \doi{10.1016/j.nima.2006.10.240}.
+\newblock URL \url{https://doi.org/10.1016/j.nima.2006.10.240}.
+
+\bibitem[{CMS Collaboration}(2024)]{CMS2024arXiv2403.15518}
+{CMS Collaboration}.
+\newblock Performance of the cms electromagnetic calorimeter in pp collisions at $\sqrt{s}$ = 13 tev.
+\newblock 2024.
+\newblock URL \url{https://arxiv.org/abs/2403.15518v2}.
+
+\bibitem[Folkerts et~al.(2023)Folkerts, Putzer, Villalba-Ch{\'a}vez, and M{\"u}ller]{folkerts2023electron}
+N.~Folkerts, J.~Putzer, S.~Villalba-Ch{\'a}vez, and C.~M{\"u}ller.
+\newblock Electron-positron pair creation in the superposition of two oscillating electric field pulses with largely different frequency, duration and relative positioning.
+\newblock \emph{arXiv preprint arXiv:2303.02350}, 2023.
+\newblock URL \url{https://arxiv.org/abs/2303.02350}.
+
+\bibitem[Groom and Klein(2019)]{Groom2019ParticlePassage}
+D.~E. Groom and S.~R. Klein.
+\newblock Passage of particles through matter.
+\newblock August 2019.
+\newblock URL \url{https://pdg.lbl.gov/2019/reviews/rpp2018-rev-passage-particles-matter.pdf}.
+\newblock Revised.
+
+\bibitem[Group and Workman(2022)]{PDG2022}
+Particle~Data Group and R.~L. Workman.
+\newblock Review of particle physics.
+\newblock \emph{Progress of Theoretical and Experimental Physics}, 2022\penalty0 (8):\penalty0 083C01, 2022.
+\newblock \doi{10.1093/ptep/ptac097}.
+\newblock URL \url{https://doi.org/10.1093/ptep/ptac097}.
+
+\bibitem[Simkina et~al.(2023)Simkina, Couderc, Malclès, and Sahin]{simkina2023reconstruction}
+Polina Simkina, Fabrice Couderc, Julie Malclès, and Mehmet~Özgür Sahin.
+\newblock Reconstruction of electromagnetic showers in calorimeters using deep learning.
+\newblock \emph{arXiv preprint arXiv:2311.17914}, 2023.
+\newblock URL \url{https://arxiv.org/abs/2311.17914}.
+
+\bibitem[Walter and Barkema(2014)]{walter2014introduction}
+Jean-Charles Walter and Gerard Barkema.
+\newblock An introduction to monte carlo methods.
+\newblock \emph{arXiv preprint arXiv:1404.0209}, 2014.
+\newblock URL \url{https://arxiv.org/abs/1404.0209}.
+
+\end{thebibliography}
