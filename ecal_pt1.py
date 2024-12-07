@@ -35,6 +35,14 @@ from scipy.special import gamma
 
 """
 
+plt.rcParams['axes.facecolor'] = '#fafafa'  # Light gray background inside axes
+plt.rcParams['axes.edgecolor'] = 'gray'  # Gray edges around the axes
+plt.rcParams['grid.color'] = 'gray'      # Slightly darker grid lines
+plt.rcParams['grid.linestyle'] = '-'    # Solid grid lines
+plt.rcParams['grid.linewidth'] = 0.8
+plt.rcParams['figure.facecolor'] = 'white'
+
+
 X0 = 0.89           # Radiation length in cm for lead tungstate
 density = 8.28      # Density in in g/cm^3 for lead tungstate
 dEdx = 11.5/X0        # Ionization energy loss in MeV/cm
@@ -175,15 +183,15 @@ def run_simulation():
 def plot_results(average_charged_counts, average_photon_counts):
     depths = np.linspace(0, calorimeter_depth, num_bins)
     plt.figure(figsize=(10, 8))
-    plt.plot(depths, average_charged_counts, '-', label='Charged Particles (e±)', color='blue', linewidth=2)
-    plt.plot(depths, average_photon_counts, '-', label='Photons', color='red', linewidth=2)
+    plt.plot(depths, average_charged_counts, 'o-', label='Charged Particles (e±)', color='blue', linewidth=2)
+    #plt.plot(depths, average_photon_counts, '-', label='Photons', color='red', linewidth=2)
 
     plt.xlabel('Calorimeter Depth (cm)', fontsize = 14)
     plt.ylabel('Avg. Number of Charged Particles', fontsize = 14)
     plt.title('Simulated Longitudinal Development of Electromagnetic Shower', fontsize = 16)
     plt.legend(fontsize=12)
     plt.grid(True)
-    plt.savefig('images/part1_b.png', dpi=300)
+    plt.savefig('images/part1_a.png', dpi=300)
     plt.show()
 
 

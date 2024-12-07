@@ -1,6 +1,6 @@
 \documentclass[twocolumn]{aastex631}
 
-\graphicspath{{/Users/devaldeliwala/classes/physics129/final_project/images/}}
+\graphicspath{{/Users/devaldeliwala/classes/physics129/ECAL_MonteCarlo/images/}}
 
 \usepackage{float} % for 'htp' placement
 \usepackage{multirow}
@@ -8,6 +8,8 @@
 \usepackage{hyperref}
 \usepackage{natbib} 
 \usepackage{booktabs}
+\usepackage{fontawesome} 
+
 
 
 \begin{document}
@@ -27,14 +29,14 @@ Muon Solenoid (CMS) electromagnetic calorimeter (ECAL) is essential for precise
 energy measurements in high-energy physics experiments. This study presents a
 Monte Carlo simulation that models the longitudinal development of
 electromagnetic showers using a one-dimensional approximation. Phase 1 focuses
-on simulating the shower profile for 1 GeV incident electrons in a 25 cm lead
+on simulating the shower profile for 1 GeV incident electrons in a 25 cm long lead
 tungstate (PbWO\(_4\)) calorimeter, validating the simulation against
 established benchmarks. Phase 2 assesses the detector's linearity and energy
 resolution by calibrating the energy deposition and examining its dependence on
 varying incident energies (1, 3, 5, and 10 GeV). Phase 3 involves fitting the
 energy deposition function to a gamma distribution, extracting parameters that
 characterize the shower development. Phase 4 explores the detector's performance
-as a function of calorimeter thickness, investigating the onset of
+as a function of calorimeter depth, investigating the onset of
 non-linearities in energy response and the scaling of energy resolution. The
 simulation demonstrates a linear relationship between incident energy and mean
 energy deposited, as well as a square root scaling of energy resolution with
@@ -61,23 +63,20 @@ is divided into four primary phases:
 
 \begin{itemize}
     \item[1.] \textit{Phase 1:} Simulates the one-dimensional longitudinal
-        development for 1 GeV
-        incident electrons, validating the simulation against established
-        benchmarks. 
+        development of an electromagnetic shower for 1 GeV
+        incident electrons, validating the simulation against an established
+        benchmarks shown in Figure 33.20 of \cite{Groom2019ParticlePassage}. 
     \item[2.] \textit{Phase 2:} Assesses the detector’s linearity and energy
         resolution across multiple incident energies (1, 3, 5, and 10 GeV).
     \item[3.] \textit{Phase 3:} Fits the energy deposition function to a gamma
         distribution, extracting parameters that characterize the shower
         development. 
     \item[4.] \textit{Phase 4:} Examines the detector’s performance as a
-        function of calorimeter thickness, investigating the onset of
+        function of calorimeter depth, investigating the onset of
         non-linearities in energy response and analyzing the scaling of energy
         resolution.
 \end{itemize}
 
-The results provide insights into the functional dependence of shower
-development on energy and validate the simulation against established
-benchmarks. 
 
 This paper is structured as follows: Section \ref{sec_2} provides a detailed
 description of the CMS electromagnetic calorimeter. Section \ref{sec_3} outlines
@@ -148,11 +147,12 @@ first generate a plot of the average number of charged particles (only
 considering positron-electron pairs, as will be discussed shortly) as a function
 of the distance from the incident face of the calorimeter. Afterwards the
 averaged number
-of photons generated via bremsstrahlung will additionally be plotted and compared
-against the number of electrons and positrons. The collective results for
-electron, positron, and photon counts as a function of calorimeter depth are
-compared to standardized values from the Particle Data Group (PDG) to assess
-simulation accuracy. 
+of photons generated via bremsstrahlung is overplotted and compared
+against the number of electrons and positrons. The collective results and
+distributions for electron, positron, and photon counts are compared
+qualitatively to \ref{Groom2019ParticlePassage}, who used an \textit{iron}
+calorimeter with an incident energy of 30GeV to assess simulation accuracy. 
+
 
 \subsubsection{Simplifying Assumptions} 
 
@@ -207,7 +207,7 @@ The simulation follows these steps for each event:
 
 \begin{enumerate}
     \item[1.] \textbf{Initialization}: Start with a single 1 GeV electron at the
-          front face (\(x = 0\) cm) of the 25 cm PbWO\(_4\) calorimeter.
+          front face (\(x = 0\) cm) of the 25 cm long PbWO\(_4\) calorimeter.
       \item[2.] \textbf{Track Management}: Maintain a list of active particles
           (electrons, positrons, and photons) with their respective energies and
           positions.
@@ -231,14 +231,14 @@ The simulation follows these steps for each event:
           on the distances traveled during interactions and energy loss.
       \item[6.] \textbf{Event Termination}: Continue the simulation until all
           particles have either exited the calorimeter or been absorbed due to
-          energy loss.
+          ionization energy loss.
   \end{enumerate}
 
 \subsubsection{Data Collection and Analysis} 
 
 
 Only the number of charged particles ($e^+$ and $e^-$) generated via photon pair
-production are first considered. For each simulated event, the positions where
+production are considered first. For each simulated event, the positions where
 charged particles cross planes at specific depths from the front face of the
 calorimeter are recorded. After simulating 1000 events to reduce any statistical
 uncertainty, the average number of charged particles crossing each plane is
@@ -250,10 +250,9 @@ shown in Figure \ref{fig:1a}.
     \includegraphics[width = \columnwidth]{part1_a.png}
     \caption{ Average number of charged particles as a function of calorimeter
         depth for 1 GeV incident electrons. The distribution exhibits a peak
-        at approximately 6.3 cm with around 9 charged particles crossing a plane
+        at 6.13cm with $\sim$5 charged particles crossing a plane
         at this depth. The shape closely resembles the charged particle
-        distribution shown in PDG Passage of Particles Through Matter Figure
-    33.20.}
+        distribution shown in Figure 33.20 of \ref{Groom2019ParticlePassage}.}
     \label{fig:1a}
 \end{figure}
 
@@ -263,24 +262,23 @@ from an \textit{iron} calorimeter using an EGS4 simulation
 \citep{Agostinelli2003} of a 30 GeV electron-induced shower. The number of
 charged particles across the calorimeter follows a normal distribution with a
 peak of $\sim$95 charged particles at $\sim$6 radiation lengths in iron for a
-30 GeV incident shower and a peak of around 9 charged particles at 
-$\sim$7.86 radiation lengths in lead tungstate for a 1 GeV incident shower. This
-of course makes sense as increased incident energy gives rise to more chances of
-pair production occurring giving rise to more charged particles in the EGS4
-simulation relative to the simplified one presented here. 
+30 GeV incident shower and a peak of around 5 charged particles at 
+$\sim$6.88 radiation lengths in lead tungstate for a 1 GeV incident shower. This
+is expected as increased incident energy gives rise to more chances of
+pair production occurring which consequently yields more charged particles in the EGS4
+simulation relative to the simplified simulation here. 
 
 To ensure the simulated simulation matches the EGS4 simulation PDG performed,
 the number of photons across the calorimeter is also considered. As shown in
 Figure 33.20 of \cite{Groom2019ParticlePassage}, the photon distribution follows
-a similar pattern as the charged particle distribution but reaches a lower peak 
-and at a later calorimeter depth and showcases more photons afterwards crossing deeper
+a similar shape to the charged particle distribution but reaches a lower peak 
+\textit{and} at a later depth. More photons afterwards cross larger 
 depths of the calorimeter than charged particles. Overplotting the photon
 distribution alongside the previously simulated charged particle distribution
 showcases similar results to the EGS4 simulation, with photon counts peaking at 
 a deeper radiation length and surpassing the number of charged particles
-afterwards (see Figure \ref{fig:1b}). Of course, both distributions tend to 0 as the particles
-increasingly lose energy
-and get absorbed at higher depths. 
+afterwards at increasing depths (see Figure \ref{fig:1b}). Of course, both distributions tend to 0 as the particles
+increasingly lose energy and ultimately get absorbed. 
 
 \begin{figure}[htp]
   \centering
@@ -289,7 +287,7 @@ and get absorbed at higher depths.
         as functions of calorimeter depth for 1 GeV incident electrons. The
         number of photons peaks after the charged particles, with the charged particle
         density only surpassing the photon density prior to its peak, in agreement
-    with PDG’s EGS4 simulation results.}
+    with PDG’s EGS4 simulation results \citep{Groom2019ParticlePassage}.}
     \label{fig:1b}
 \end{figure}
 
@@ -322,7 +320,7 @@ contributions.
 electrons is used to \textit{calibrate} the detector. When particles of fixed
 energy incident energy $E_0$ strike the lead calorimeter, the measured energies from
 each particle form a Gaussian distribution in energy centered at $E_0$. The
-standard deviation then defines the \textit{energy}
+standard deviation divided by the incident electron energy defines the \textit{energy}
 resolution of the detector. Hence, using the initial 1 GeV simulation, the
 measured mean of the resultant energy deposition Gaussian distribution is
 measured and can afterwards be \textit{scaled} accordingly to yield a
@@ -360,8 +358,8 @@ similarly to Figure \ref{fig:1a} in Figure \ref{fig:2b}.
     \includegraphics[width = \columnwidth]{part2_b.png}
     \caption{Average number of charged particles as a function of calorimeter
         depth for incident energies of 1, 3, 5, and 10 GeV. Higher incident energies result in
-        increased average charged particle densities and shifts further in the shower
-    maximum depth.}
+        increased average charged particle densities and further shower
+    maximums.}
     \label{fig:2b}
 \end{figure}
 
@@ -392,6 +390,9 @@ by a slope of 1.00.
 This linearity is a direct consequence of the simplifying assumptions made in
 the simulation, particularly the proportionality of ionization energy loss to
 distance traveled and the equal energy sharing in the bremsstrahlung processes.
+This relationship is ideal, but not measured in practice due to particle
+leakage, radiation, geometrical effects (i.e., particle not entering perfectly
+normal), among many other factors that are not considered here. 
  
 \subsection{Energy Resolution Scaling} 
 
@@ -399,8 +400,8 @@ The energy resolution of the calorimeter is proportional to the standard
 deviation of the total energy deposition of an electromagnetic shower as shown
 in Figure \ref{fig:2a} by the equation. To determine how the resolution of the calorimeter
 scales with the incident energy, the standard deviation of the energy deposition
-distribution divided by the incident energy is plotted against 1, 3, 5, and 10 GeV incident energies like
-before.
+distribution divided by the incident energy is plotted against 1, 3, 5, and 10
+GeV incident energies like in Phase 1. 
 
 \begin{figure}[htp]
   \centering
@@ -459,7 +460,7 @@ dynamics within the calorimeter.
 \subsection{Phase 4: Linearity and Resolution vs. Calorimeter Depth} 
 
 Phase 4 examines how the performance of the calorimeter changes as a function of
-its thickness, measured in radiation lengths $X_0$. Specifically, it
+its depth, measured in radiation lengths $X_0$. Specifically, it
 investigates the onset of non-linearities in the energy response and analyzes
 how energy resolution scales with calorimeter depth.
 
@@ -575,19 +576,21 @@ simplifying assumptions employed.
 \textbf{Phase 2} extended the simulation to evaluate the detector’s linearity
 and energy resolution across incident energies of 1, 3, 5, and 10 GeV. The
 calibration procedure effectively aligned the mean energy deposition with the
-known incident energies, and the results exhibited a perfect linear relationship
-between incident energy and measured energy deposition. Additionally, the energy
+known incident energies, and the results exhibited a perfect idealized linear relationship
+between incident energy and measured energy deposition. However, this linearity
+is not consistently observed in practice due to various factors that are not
+accounted for in the idealized model. Additionally, the energy
 resolution was found to scale with the inverse square-root of the incident energy,
 consistent with CMS reports \citep{CMS2024arXiv2403.15518}. 
 
 \textbf{Phase 3} involved fitting the energy deposition function to a gamma
-distribution, extracting parameters $a$ and $a$ for various incident energies. The
+distribution, extracting parameters $a$ and $b$ for various incident energies. The
 fitted parameters provide a quantitative characterization of the shower
 development and demonstrate how the energy deposition profile evolves with
 increasing energy.
 
 \textbf{Phase 4} explored the detector’s performance as a function of
-calorimeter thickness. The results indicated that thinner calorimeters (5$X_0$)
+calorimeter depth. The results indicated that shallower calorimeters (5$X_0$)
 exhibit significant non-linearities in energy response and higher relative
 energy resolution. As the calorimeter depth increases to $10X_0$ and beyond, the
 energy deposition approaches linearity, and the energy resolution improves,
@@ -604,6 +607,11 @@ These enhancements aim to provide a more comprehensive understanding of the
 CMS ECAL’s performance, contributing to more accurate energy measurements and
 improved particle identification in high-energy physics experiments.
 
+\vspace{20px}
+
+\begin{center}
+    \href{https://github.com/devdeliw/ECAL_MonteCarlo}{\faGithub $\;$ Code Accessible}
+\end{center}
 
 
 

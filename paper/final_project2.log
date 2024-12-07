@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.11.23)  5 DEC 2024 20:47
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.11.23)  6 DEC 2024 16:59
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -486,16 +486,22 @@ Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
 \@thisruleclass=\count347
 \@lastruleclass=\count348
 \@thisrulewidth=\dimen191
-)
-Class revtex4-1 Info: Unrecognized array package. Please update this document class! (Proceeding with fingers crossed.) on input line 13.
+) (/usr/local/texlive/2023/texmf-dist/tex/latex/fontawesome/fontawesome.sty
+Package: fontawesome 2016/05/15 v4.6.3.1 font awesome icons
+ (/usr/local/texlive/2023/texmf-dist/tex/generic/iftex/ifxetex.sty
+Package: ifxetex 2019/10/25 v0.7 ifxetex legacy package. Use iftex instead.
+) (/usr/local/texlive/2023/texmf-dist/tex/generic/iftex/ifluatex.sty
+Package: ifluatex 2019/10/25 v1.5 ifluatex legacy package. Use iftex instead.
+) (/usr/local/texlive/2023/texmf-dist/tex/latex/fontawesome/fontawesomesymbols-generic.tex) (/usr/local/texlive/2023/texmf-dist/tex/latex/fontawesome/fontawesomesymbols-pdftex.tex))
+Class revtex4-1 Info: Unrecognized array package. Please update this document class! (Proceeding with fingers crossed.) on input line 15.
 
 
 Class revtex4-1 Warning: Repair the float package.
 
-Class revtex4-1 Info: Patching unrecognized longtable package. (Proceeding with fingers crossed) on input line 13.
-Class revtex4-1 Info: cite was not loaded (OK!) on input line 13.
-Class revtex4-1 Info: mcite was not loaded (OK!) on input line 13.
-Class revtex4-1 Info: multicol was not loaded (OK!) on input line 13.
+Class revtex4-1 Info: Patching unrecognized longtable package. (Proceeding with fingers crossed) on input line 15.
+Class revtex4-1 Info: cite was not loaded (OK!) on input line 15.
+Class revtex4-1 Info: mcite was not loaded (OK!) on input line 15.
+Class revtex4-1 Info: multicol was not loaded (OK!) on input line 15.
 (/usr/local/texlive/2023/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2023-01-16 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count349
@@ -503,24 +509,24 @@ File: l3backend-pdftex.def 2023-01-16 L3 backend support: PDF output (pdfTeX)
 ) (./final_project2.aux)
 \openout1 = `final_project2.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
  (/usr/local/texlive/2023/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count350
@@ -562,26 +568,30 @@ Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
 \linenoamsmath@ams@eqpen=\count364
 LaTeX Info: Redefining \\ on input line 3131.
 )
-Package hyperref Info: Link coloring ON on input line 13.
+Package hyperref Info: Link coloring ON on input line 15.
  (./final_project2.out) (./final_project2.out)
 \@outlinefile=\write4
 \openout4 = `final_project2.out'.
 
-Class revtex4-1 Info: Overriding lineo.sty, restoring output routine, on input line 13.
-Class revtex4-1 Info: Line numbering not turned on yet on input line 13.
-Class revtex4-1 Info: Overriding \@LN@LLerror on input line 13.
-LaTeX Font Info:    Trying to load font information for U+lasy on input line 31.
+Class revtex4-1 Info: Overriding lineo.sty, restoring output routine, on input line 15.
+Class revtex4-1 Info: Line numbering not turned on yet on input line 15.
+Class revtex4-1 Info: Overriding \@LN@LLerror on input line 15.
+LaTeX Font Info:    Trying to load font information for U+lasy on input line 33.
  (/usr/local/texlive/2023/texmf-dist/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
-LaTeX Font Info:    Trying to load font information for U+msa on input line 31.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 33.
  (/usr/local/texlive/2023/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 31.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 33.
  (/usr/local/texlive/2023/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1{/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+
+LaTeX Warning: Reference `Groom2019ParticlePassage' on page 2 undefined on input line 153.
+
+
 Underfull \hbox (badness 1715) in paragraph at lines 169--174
 \OT1/cmr/m/n/10 tro-mag-netic show-ers de-velop in three di-men-
  []
@@ -592,145 +602,149 @@ Underfull \hbox (badness 1199) in paragraph at lines 182--186
  []
 
 [2]
-</Users/devaldeliwala/classes/physics129/final_project/images//part1_a.png, id=109, 722.7pt x 578.16pt>
-File: /Users/devaldeliwala/classes/physics129/final_project/images//part1_a.png Graphic file (type png)
-<use /Users/devaldeliwala/classes/physics129/final_project/images//part1_a.png>
-Package pdftex.def Info: /Users/devaldeliwala/classes/physics129/final_project/images//part1_a.png  used on input line 250.
-(pdftex.def)             Requested size: 242.26653pt x 193.8105pt.
- [3
+</Users/devaldeliwala/classes/physics129/ECAL_MonteCarlo/images//part1_a.png, id=112, 608.7543pt x 510.708pt>
+File: /Users/devaldeliwala/classes/physics129/ECAL_MonteCarlo/images//part1_a.png Graphic file (type png)
+<use /Users/devaldeliwala/classes/physics129/ECAL_MonteCarlo/images//part1_a.png>
+Package pdftex.def Info: /Users/devaldeliwala/classes/physics129/ECAL_MonteCarlo/images//part1_a.png  used on input line 250.
+(pdftex.def)             Requested size: 242.26653pt x 203.24313pt.
+
+
+LaTeX Warning: Reference `Groom2019ParticlePassage' on page 3 undefined on input line 255.
+
+
+LaTeX Warning: Reference `Groom2019ParticlePassage' on page 3 undefined on input line 255.
+
+[3
 pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.271 
-       </Users/devaldeliwala/classes/physics129/final_project/images//part1_a.png>]
-</Users/devaldeliwala/classes/physics129/final_project/images//part1_b.png, id=127, 722.7pt x 578.16pt>
-File: /Users/devaldeliwala/classes/physics129/final_project/images//part1_b.png Graphic file (type png)
-<use /Users/devaldeliwala/classes/physics129/final_project/images//part1_b.png>
-Package pdftex.def Info: /Users/devaldeliwala/classes/physics129/final_project/images//part1_b.png  used on input line 287.
-(pdftex.def)             Requested size: 242.26653pt x 193.8105pt.
-</Users/devaldeliwala/classes/physics129/final_project/images//part2_a.png, id=129, 722.7pt x 578.16pt>
-File: /Users/devaldeliwala/classes/physics129/final_project/images//part2_a.png Graphic file (type png)
-<use /Users/devaldeliwala/classes/physics129/final_project/images//part2_a.png>
-Package pdftex.def Info: /Users/devaldeliwala/classes/physics129/final_project/images//part2_a.png  used on input line 334.
-(pdftex.def)             Requested size: 242.26653pt x 193.8105pt.
+l.270 
+       </Users/devaldeliwala/classes/physics129/ECAL_MonteCarlo/images//part1_a.png>]
+</Users/devaldeliwala/classes/physics129/ECAL_MonteCarlo/images//part1_b.png, id=130, 606.8271pt x 515.0442pt>
+File: /Users/devaldeliwala/classes/physics129/ECAL_MonteCarlo/images//part1_b.png Graphic file (type png)
+<use /Users/devaldeliwala/classes/physics129/ECAL_MonteCarlo/images//part1_b.png>
+Package pdftex.def Info: /Users/devaldeliwala/classes/physics129/ECAL_MonteCarlo/images//part1_b.png  used on input line 285.
+(pdftex.def)             Requested size: 242.26653pt x 205.62108pt.
+</Users/devaldeliwala/classes/physics129/ECAL_MonteCarlo/images//part2_a.png, id=136, 655.4889pt x 520.1031pt>
+File: /Users/devaldeliwala/classes/physics129/ECAL_MonteCarlo/images//part2_a.png Graphic file (type png)
+<use /Users/devaldeliwala/classes/physics129/ECAL_MonteCarlo/images//part2_a.png>
+Package pdftex.def Info: /Users/devaldeliwala/classes/physics129/ECAL_MonteCarlo/images//part2_a.png  used on input line 332.
+(pdftex.def)             Requested size: 242.26653pt x 192.22879pt.
  [4
 pdfTeX warning (ext4): destination with the same identifier (name{figure.2}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.351 \subsubsection
-                    {Simulation at Multiple Incident Energies} </Users/devaldeliwala/classes/physics129/final_project/images//part1_b.png>]
+l.348 
+       </Users/devaldeliwala/classes/physics129/ECAL_MonteCarlo/images//part1_b.png>]
 
-LaTeX Warning: A float is stuck (cannot be placed) on input line 351.
+LaTeX Warning: A float is stuck (cannot be placed) on input line 348.
 
 
-LaTeX Warning: A float is stuck (cannot be placed) on input line 351.
+LaTeX Warning: A float is stuck (cannot be placed) on input line 348.
 
 
 Class revtex4-1 Warning: Deferred float stuck during \clearpage processing.
 
-</Users/devaldeliwala/classes/physics129/final_project/images//part2_b.png, id=142, 722.7pt x 578.16pt>
-File: /Users/devaldeliwala/classes/physics129/final_project/images//part2_b.png Graphic file (type png)
-<use /Users/devaldeliwala/classes/physics129/final_project/images//part2_b.png>
-Package pdftex.def Info: /Users/devaldeliwala/classes/physics129/final_project/images//part2_b.png  used on input line 360.
+</Users/devaldeliwala/classes/physics129/ECAL_MonteCarlo/images//part2_b.png, id=149, 722.7pt x 578.16pt>
+File: /Users/devaldeliwala/classes/physics129/ECAL_MonteCarlo/images//part2_b.png Graphic file (type png)
+<use /Users/devaldeliwala/classes/physics129/ECAL_MonteCarlo/images//part2_b.png>
+Package pdftex.def Info: /Users/devaldeliwala/classes/physics129/ECAL_MonteCarlo/images//part2_b.png  used on input line 358.
 (pdftex.def)             Requested size: 242.26653pt x 193.8105pt.
-</Users/devaldeliwala/classes/physics129/final_project/images//part2_c.png, id=144, 722.7pt x 578.16pt>
-File: /Users/devaldeliwala/classes/physics129/final_project/images//part2_c.png Graphic file (type png)
-<use /Users/devaldeliwala/classes/physics129/final_project/images//part2_c.png>
-Package pdftex.def Info: /Users/devaldeliwala/classes/physics129/final_project/images//part2_c.png  used on input line 384.
+</Users/devaldeliwala/classes/physics129/ECAL_MonteCarlo/images//part2_c.png, id=151, 722.7pt x 578.16pt>
+File: /Users/devaldeliwala/classes/physics129/ECAL_MonteCarlo/images//part2_c.png Graphic file (type png)
+<use /Users/devaldeliwala/classes/physics129/ECAL_MonteCarlo/images//part2_c.png>
+Package pdftex.def Info: /Users/devaldeliwala/classes/physics129/ECAL_MonteCarlo/images//part2_c.png  used on input line 382.
 (pdftex.def)             Requested size: 242.26653pt x 193.8105pt.
-</Users/devaldeliwala/classes/physics129/final_project/images//part2_d.png, id=146, 722.7pt x 578.16pt>
-File: /Users/devaldeliwala/classes/physics129/final_project/images//part2_d.png Graphic file (type png)
-<use /Users/devaldeliwala/classes/physics129/final_project/images//part2_d.png>
-Package pdftex.def Info: /Users/devaldeliwala/classes/physics129/final_project/images//part2_d.png  used on input line 407.
+</Users/devaldeliwala/classes/physics129/ECAL_MonteCarlo/images//part2_d.png, id=153, 722.7pt x 578.16pt>
+File: /Users/devaldeliwala/classes/physics129/ECAL_MonteCarlo/images//part2_d.png Graphic file (type png)
+<use /Users/devaldeliwala/classes/physics129/ECAL_MonteCarlo/images//part2_d.png>
+Package pdftex.def Info: /Users/devaldeliwala/classes/physics129/ECAL_MonteCarlo/images//part2_d.png  used on input line 408.
 (pdftex.def)             Requested size: 242.26653pt x 193.8105pt.
 [5
 pdfTeX warning (ext4): destination with the same identifier (name{figure.3}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.420 
+l.415 
       
 pdfTeX warning (ext4): destination with the same identifier (name{figure.4}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.420 
+l.415 
       
 pdfTeX warning (ext4): destination with the same identifier (name{figure.5}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.420 
-       </Users/devaldeliwala/classes/physics129/final_project/images//part2_a.png> </Users/devaldeliwala/classes/physics129/final_project/images//part2_b.png> </Users/devaldeliwala/classes/physics129/final_project/images//part2_c.png>]
-
-LaTeX Warning: A float is stuck (cannot be placed) on input line 420.
-
-
-LaTeX Warning: A float is stuck (cannot be placed) on input line 420.
-
-
-Class revtex4-1 Warning: Deferred float stuck during \clearpage processing.
-
-
-Underfull \hbox (badness 2080) in paragraph at lines 461--465
+l.415 
+       </Users/devaldeliwala/classes/physics129/ECAL_MonteCarlo/images//part2_a.png> </Users/devaldeliwala/classes/physics129/ECAL_MonteCarlo/images//part2_b.png> </Users/devaldeliwala/classes/physics129/ECAL_MonteCarlo/images//part2_c.png>]
+Underfull \hbox (badness 2080) in paragraph at lines 462--466
 []\OT1/cmr/m/n/10 Phase 4 ex-am-ines how the per-for-mance of the
  []
 
-</Users/devaldeliwala/classes/physics129/final_project/images//linearity_vs_depth.png, id=161, 722.7pt x 578.16pt>
-File: /Users/devaldeliwala/classes/physics129/final_project/images//linearity_vs_depth.png Graphic file (type png)
-<use /Users/devaldeliwala/classes/physics129/final_project/images//linearity_vs_depth.png>
-Package pdftex.def Info: /Users/devaldeliwala/classes/physics129/final_project/images//linearity_vs_depth.png  used on input line 474.
+</Users/devaldeliwala/classes/physics129/ECAL_MonteCarlo/images//linearity_vs_depth.png, id=168, 722.7pt x 578.16pt>
+File: /Users/devaldeliwala/classes/physics129/ECAL_MonteCarlo/images//linearity_vs_depth.png Graphic file (type png)
+<use /Users/devaldeliwala/classes/physics129/ECAL_MonteCarlo/images//linearity_vs_depth.png>
+Package pdftex.def Info: /Users/devaldeliwala/classes/physics129/ECAL_MonteCarlo/images//linearity_vs_depth.png  used on input line 475.
 (pdftex.def)             Requested size: 242.26653pt x 193.8105pt.
 [6
 pdfTeX warning (ext4): destination with the same identifier (name{figure.6}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.498 
+l.499 
       
 pdfTeX warning (ext4): destination with the same identifier (name{table.1}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.498 
+l.499 
       
 pdfTeX warning (ext4): destination with the same identifier (name{figure.7}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.498 
-       </Users/devaldeliwala/classes/physics129/final_project/images//part2_d.png> </Users/devaldeliwala/classes/physics129/final_project/images//linearity_vs_depth.png>]
-</Users/devaldeliwala/classes/physics129/final_project/images//linearity_ratio_vs_depth.png, id=176, 722.7pt x 578.16pt>
-File: /Users/devaldeliwala/classes/physics129/final_project/images//linearity_ratio_vs_depth.png Graphic file (type png)
-<use /Users/devaldeliwala/classes/physics129/final_project/images//linearity_ratio_vs_depth.png>
-Package pdftex.def Info: /Users/devaldeliwala/classes/physics129/final_project/images//linearity_ratio_vs_depth.png  used on input line 507.
+l.499 
+       </Users/devaldeliwala/classes/physics129/ECAL_MonteCarlo/images//part2_d.png> </Users/devaldeliwala/classes/physics129/ECAL_MonteCarlo/images//linearity_vs_depth.png>]
+</Users/devaldeliwala/classes/physics129/ECAL_MonteCarlo/images//linearity_ratio_vs_depth.png, id=182, 722.7pt x 578.16pt>
+File: /Users/devaldeliwala/classes/physics129/ECAL_MonteCarlo/images//linearity_ratio_vs_depth.png Graphic file (type png)
+<use /Users/devaldeliwala/classes/physics129/ECAL_MonteCarlo/images//linearity_ratio_vs_depth.png>
+Package pdftex.def Info: /Users/devaldeliwala/classes/physics129/ECAL_MonteCarlo/images//linearity_ratio_vs_depth.png  used on input line 508.
 (pdftex.def)             Requested size: 242.26653pt x 193.8105pt.
-</Users/devaldeliwala/classes/physics129/final_project/images//relative_resolution_vs_depth.png, id=178, 722.7pt x 578.16pt>
-File: /Users/devaldeliwala/classes/physics129/final_project/images//relative_resolution_vs_depth.png Graphic file (type png)
-<use /Users/devaldeliwala/classes/physics129/final_project/images//relative_resolution_vs_depth.png>
-Package pdftex.def Info: /Users/devaldeliwala/classes/physics129/final_project/images//relative_resolution_vs_depth.png  used on input line 535.
+</Users/devaldeliwala/classes/physics129/ECAL_MonteCarlo/images//relative_resolution_vs_depth.png, id=184, 722.7pt x 578.16pt>
+File: /Users/devaldeliwala/classes/physics129/ECAL_MonteCarlo/images//relative_resolution_vs_depth.png Graphic file (type png)
+<use /Users/devaldeliwala/classes/physics129/ECAL_MonteCarlo/images//relative_resolution_vs_depth.png>
+Package pdftex.def Info: /Users/devaldeliwala/classes/physics129/ECAL_MonteCarlo/images//relative_resolution_vs_depth.png  used on input line 536.
 (pdftex.def)             Requested size: 242.26653pt x 193.8105pt.
  [7
 pdfTeX warning (ext4): destination with the same identifier (name{figure.8}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.561 \section
-              {CONCLUSION} \label{sec_4}
+l.560 
+      
 pdfTeX warning (ext4): destination with the same identifier (name{figure.9}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.561 \section
-              {CONCLUSION} \label{sec_4} </Users/devaldeliwala/classes/physics129/final_project/images//linearity_ratio_vs_depth.png> </Users/devaldeliwala/classes/physics129/final_project/images//relative_resolution_vs_depth.png>] (./final_project2.bbl [8]) [9] (./final_project2.aux)
+l.560 
+       </Users/devaldeliwala/classes/physics129/ECAL_MonteCarlo/images//linearity_ratio_vs_depth.png> </Users/devaldeliwala/classes/physics129/ECAL_MonteCarlo/images//relative_resolution_vs_depth.png>]
+LaTeX Font Info:    Trying to load font information for U+fontawesometwo on input line 613.
+ (/usr/local/texlive/2023/texmf-dist/tex/latex/fontawesome/ufontawesometwo.fd
+File: ufontawesometwo.fd 2016/05/22 Font definitions for U/fontawesometwo.
+) (./final_project2.bbl [8{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/fontawesome/fontawesometwo.enc}]) [9] (./final_project2.aux)
+
+LaTeX Warning: There were undefined references.
+
 Package rerunfilecheck Info: File `final_project2.out' has not changed.
 (rerunfilecheck)             Checksum: 5EAC73033490969E602B03779D3D9138;4396.
  ) 
 Here is how much of TeX's memory you used:
- 13875 strings out of 476025
- 211627 string characters out of 5790016
- 1872388 words of memory out of 5000000
- 34078 multiletter control sequences out of 15000+600000
- 523041 words of font info for 75 fonts, out of 8000000 for 9000
+ 15428 strings out of 476025
+ 234142 string characters out of 5790016
+ 1871388 words of memory out of 5000000
+ 35612 multiletter control sequences out of 15000+600000
+ 523357 words of font info for 76 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 90i,8n,90p,539b,518s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb>
-Output written on final_project2.pdf (9 pages, 2278330 bytes).
+ 90i,8n,90p,539b,516s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/texlive/2023/texmf-dist/fonts/type1/public/fontawesome/FontAwesome.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb>
+Output written on final_project2.pdf (9 pages, 2254045 bytes).
 PDF statistics:
- 308 PDF objects out of 1000 (max. 8388607)
- 240 compressed objects within 3 object streams
+ 321 PDF objects out of 1000 (max. 8388607)
+ 249 compressed objects within 3 object streams
  47 named destinations out of 1000 (max. 500000)
  182 words of extra memory for PDF output out of 10000 (max. 10000000)
 
