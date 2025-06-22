@@ -5,28 +5,25 @@ from tqdm import tqdm
 from scipy.optimize import curve_fit
 from scipy.special import gamma
 
-# Set global parameters for axes and figure backgrounds
-plt.rcParams['axes.facecolor'] = '#fafafa'  # Light gray background inside axes
-plt.rcParams['axes.edgecolor'] = 'gray'  # Gray edges around the axes
-plt.rcParams['grid.color'] = 'gray'      # Slightly darker grid lines
-plt.rcParams['grid.linestyle'] = '-'    # Solid grid lines
+plt.rcParams['axes.facecolor'] = '#fafafa'  
+plt.rcParams['axes.edgecolor'] = 'gray'  
+plt.rcParams['grid.color'] = 'gray'      
+plt.rcParams['grid.linestyle'] = '-'
 plt.rcParams['grid.linewidth'] = 0.8
 plt.rcParams['figure.facecolor'] = 'white'
 
 
-# Material and simulation parameters
-X0 = 0.89  # Radiation length in cm
-density = 8.28  # Density in g/cm^3
-dEdx = 11.5 / X0  # Ionization energy loss in MeV/cm
+X0 = 0.89               # Radiation length in cm
+density = 8.28          # Density in g/cm^3
+dEdx = 11.5 / X0        # Ionization energy loss in MeV/cm
 
-# Simulation parameters
 E_initial = 1000.0  # Initial energy in MeV
 num_events = 1000  # Number of simulated events
 # We will vary calorimeter_depth in the code below
 # num_bins will also vary accordingly
 bin_width = 0.1 * X0  # Bin width in cm (fixed fraction of X0)
 
-# Helper functions
+# helper functions
 def get_interaction_length(mean_free_path):
     return np.random.exponential(mean_free_path)
 
@@ -62,7 +59,7 @@ def update_particle_position(particle, distance, charged_counts, photon_counts, 
             elif particle['type'] == 'photon':
                 photon_counts[b] += 1
 
-# Simulation function
+# simulation
 def simulate_event(E_initial, calorimeter_depth_cm, num_bins, bin_width):
     particle_stack = []
     primary_electron = {'type': 'electron', 'energy': E_initial, 'position': 0.0}
@@ -100,9 +97,8 @@ def simulate_event(E_initial, calorimeter_depth_cm, num_bins, bin_width):
 
     return charged_particle_counts, total_energy_deposited
 
-# Running the simulation
 def run_simulation_for_energies(energies_GeV, num_events, calorimeter_depth_cm, num_bins, bin_width):
-    # Runs the simulation for a list of initial energies in MeV
+    # runs the simulation for a list of initial energies in MeV
     results = {}
     energy_deposits = {}
     for E_GeV in energies_GeV:
@@ -120,7 +116,8 @@ def run_simulation_for_energies(energies_GeV, num_events, calorimeter_depth_cm, 
     return results, energy_deposits
 
 def calculate_statistics(energy_deposits):
-    # Calculates the mean and standard deviation of energy deposits for each incident energy
+    # calculates the mean and standard deviation of energy deposits 
+    # for each incident energy
     energies_GeV = sorted(energy_deposits.keys())
     means_GeV = []
     sigmas_GeV = []
@@ -128,11 +125,10 @@ def calculate_statistics(energy_deposits):
         deposits_MeV = np.array(energy_deposits[E_GeV])
         mean_MeV = np.mean(deposits_MeV)
         sigma_MeV = np.std(deposits_MeV)
-        means_GeV.append(mean_MeV / 1000.0)   # Convert to GeV
-        sigmas_GeV.append(sigma_MeV / 1000.0) # Convert to GeV
+        means_GeV.append(mean_MeV / 1000.0)     # convert to GeV
+        sigmas_GeV.append(sigma_MeV / 1000.0)   # convert to GeV
     return means_GeV, sigmas_GeV, energies_GeV
 
-# Plotting functions
 def plot_linearity_vs_depth(all_means, energies_GeV, depth_X0_list):
     plt.figure(figsize=(10, 8))
     for depth_X0 in depth_X0_list:
@@ -188,18 +184,11 @@ def plot_relative_resolution_vs_depth(all_sigmas, all_means, energies_GeV, depth
     plt.tight_layout()
     plt.savefig('images/relative_resolution_vs_depth.png', dpi=300)
 
-# Main execution
 if __name__ == "__main__":
-    # Define the list of initial energies in GeV
     initial_energies_GeV = [1, 3, 5, 10]
-
-    # Number of events per energy
     num_events_per_energy = 1000
-
-    # Define the list of calorimeter depths in units of X0
     depth_X0_list = [5, 10, 15, 20, 25]
 
-    # Dictionaries to store results
     all_means = {}
     all_sigmas = {}
 
@@ -208,7 +197,7 @@ if __name__ == "__main__":
         num_bins = int(calorimeter_depth_cm / bin_width)
         print(f"\nRunning simulations for calorimeter depth = {depth_X0} X0 ({calorimeter_depth_cm:.2f} cm)")
 
-        # Run the simulation for all energies at this depth
+        # run the simulation for all energies at this depth
         results, energy_deposits = run_simulation_for_energies(
             initial_energies_GeV,
             num_events_per_energy,
@@ -216,15 +205,11 @@ if __name__ == "__main__":
             num_bins,
             bin_width
         )
-
-        # Calculate statistics
         means_GeV, sigmas_GeV, energies_GeV = calculate_statistics(energy_deposits)
 
-        # Store the results
         all_means[depth_X0] = means_GeV
         all_sigmas[depth_X0] = sigmas_GeV
 
-    # Plotting the results
     plot_linearity_vs_depth(all_means, energies_GeV, depth_X0_list)
     plot_linearity_ratio_vs_depth(all_means, energies_GeV, depth_X0_list)
     plot_resolution_vs_depth(all_sigmas, energies_GeV, depth_X0_list)
