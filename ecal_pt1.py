@@ -13,11 +13,6 @@ from scipy.special import gamma
     The goal of this project is to simulate (with many assumptions) the
     performance of the CMS electromagnetic calorimeter & predict its resolution
     and linearity.
-    ----------------------------------------------------------------------------
-
-
-    PART 1
-    ------
 
     Writing a Monte Carlo simulation that predicts the *longitudinal development
     of an EM shower in the CMS ECAL.
@@ -35,28 +30,24 @@ from scipy.special import gamma
 
 """
 
-plt.rcParams['axes.facecolor'] = '#fafafa'  # Light gray background inside axes
-plt.rcParams['axes.edgecolor'] = 'gray'  # Gray edges around the axes
-plt.rcParams['grid.color'] = 'gray'      # Slightly darker grid lines
-plt.rcParams['grid.linestyle'] = '-'    # Solid grid lines
+plt.rcParams['axes.facecolor'] = '#fafafa'  
+plt.rcParams['axes.edgecolor'] = 'gray' 
+plt.rcParams['grid.color'] = 'gray'     
+plt.rcParams['grid.linestyle'] = '-'
 plt.rcParams['grid.linewidth'] = 0.8
 plt.rcParams['figure.facecolor'] = 'white'
 
 
-X0 = 0.89           # Radiation length in cm for lead tungstate
-density = 8.28      # Density in in g/cm^3 for lead tungstate
-dEdx = 11.5/X0        # Ionization energy loss in MeV/cm
+X0 = 0.89                   # Radiation length in cm for lead tungstate
+density = 8.28              # Density in in g/cm^3 for lead tungstate
+dEdx = 11.5/X0              # Ionization energy loss in MeV/cm
 
-## Simulation Parameters ## 
 E_initial = 1000.0          # Initial energy in MeV (1 GeV)
 num_events = 1000           # Number of events to simulate
 calorimeter_depth = 25.0    # Calorimeter Depth in cm
 num_bins = 250              # Number of spatial bins/"planes" across calorimeter 
 bin_width = calorimeter_depth / num_bins 
 
-#------------------#
-# Helper Functions # 
-#------------------#
 def get_interaction_length(mean_free_path): 
     # random interaction length based on mean free path 
     return np.random.exponential(mean_free_path) 
@@ -104,10 +95,7 @@ def update_particle_position(particle, distance, charged_counts, photon_counts):
             elif particle['type'] == 'photon':
                 photon_counts[b] += 1
 
-#------------#
-# Simulation # 
-#------------# 
-
+# simulation 
 def simulate_event():
     # initialize particle stack with the primary electron
     particle_stack = []
